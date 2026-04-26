@@ -27,40 +27,40 @@ const scheduleItems = [
         time: "17:00",
         title: "Сбор гостей",
         details: "ЗАГС №1\nАнглийская набережная, 28",
-        top: "top-[1622px]",
+        top: "top-[1632px]",
         timeTop: "top-[1632px]",
-        detailsTop: "top-[1650px]",
-        right: "right-[86px]",
-        detailsRight: "right-[23px]",
+        detailsTop: "top-[1660px]",
+        right: "left-[117px]",
+        detailsRight: "right-[11px]",
     },
     {
         time: "17:40",
         title: "Торжественная церемония",
         details: "",
-        top: "top-[1702px]",
-        timeTop: "top-[1713px]",
+        top: "top-[1718px]",
+        timeTop: "top-[1718px]",
         detailsTop: "",
-        right: "right-[31px]",
+        right: "left-[144px]",
         detailsRight: "",
     },
     {
         time: "18:30",
         title: "Праздничный банкет",
         details: "",
-        top: "top-[1787px]",
+        top: "top-[1802px]",
         timeTop: "top-[1802px]",
         detailsTop: "",
-        right: "right-[46px]",
+        right: "right-[34px]",
         detailsRight: "",
     },
     {
         time: "23:30",
         title: "Окончание мероприятия",
         details: "",
-        top: "top-[1876px]",
-        timeTop: "top-[1891px]",
+        top: "top-[1880px]",
+        timeTop: "top-[1880px]",
         detailsTop: "",
-        right: "right-12",
+        right: "right-[32px]",
         detailsRight: "",
     },
 ];
@@ -121,7 +121,7 @@ export const Mobile = (): JSX.Element => {
                     aria-hidden="true"
                     src={horizontalLine}
                 />
-                <p className="absolute w-[calc(100%_-_40px)] top-[537px] left-5 font-ebgaramond font-normal text-[#7e7c3e] text-[26px] text-center tracking-[0] leading-[29.4px]">
+                <p className="absolute w-[calc(100%_-_40px)] top-[537px] left-5 font-ebgaramond font-normal text-[#7e7c3e] text-[26px] text-center tracking-[0] leading-[27px]">
                     Приглашаем вас разделить с нами этот праздник — <br />
                     день нашей свадьбы!
                 </p>
@@ -252,19 +252,21 @@ export const Mobile = (): JSX.Element => {
                         <div
                             className={`absolute ${item.top} ${item.right} ${index === 0 ? "text-center whitespace-nowrap" : ""
                                 } ${index === 1 ? "w-[213px]" : "w-[196px]"
-                                } font-cormorant font-semibold text-[#eeeeeb] text-2xl tracking-[2.40px] leading-[25.4px]`}
+                                } font-cormorant font-semibold text-[#eeeeeb] text-2xl tracking-[2.40px] leading-[24px]`}
                         >
                             {item.title}
                         </div>
                         <time
-                            className={`absolute ${item.timeTop} ${index === 0
-                                ? "left-[29px]"
-                                : index === 1
-                                    ? "left-[29px] w-[63px]"
-                                    : index === 2
-                                        ? "left-7"
-                                        : "left-8"
-                                } font-cormorant font-semibold text-[#eeeeeb] text-2xl ${index === 0 || index === 2 || index === 3
+                            className={`absolute ${item.timeTop} 
+                            ${index === 0
+                                    ? "left-[29px]"
+                                    : index === 1
+                                        ? "left-[29px] w-[63px]"
+                                        : index === 2
+                                            ? "left-7"
+                                            : "left-8"
+                                } 
+                                font-cormorant font-semibold text-[#eeeeeb] text-2xl ${index === 0 || index === 2 || index === 3
                                     ? "text-center whitespace-nowrap"
                                     : ""
                                 } tracking-[2.40px] leading-[26.4px]`}
@@ -285,7 +287,6 @@ export const Mobile = (): JSX.Element => {
                         ) : null}
                     </div>
                 ))}
-
                 <img
                     className="absolute top-[1658px] left-[113px] w-[9px] h-[66px] opacity-40"
                     alt=""
